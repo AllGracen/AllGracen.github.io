@@ -15,13 +15,29 @@
     font-weight: 400;
     src: url('./fonts/Jost-Regular.ttf') format('woff');
 }
-
+*{
+    box-sizing: border-box;
+  }
+  
+  /* Create two equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 50%;
+    padding: 10px;
+    height: 300px; /* Should be removed. Only for demonstration */
+  }
+  
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
 * {
     margin: 0;
     padding: 0;
     box-sizing: inherit;
 }
-
 :root {
     --font-size-small: 1.8rem;
     --font-size-normal: 2.2rem;
@@ -34,9 +50,11 @@
     --line-height-normal: 1.7;
     --line-height-small: 1.2;
 
-    --black: #000;
-    --pink: #ff3258;
+    --black: rgba(7, 17, 9, 0.689);
+    --pink: #324dff;
     --white: #f0e9f2;
+    --butin: rgba(7, 17, 9, 0.689);
+    --front: #489515;
     --white-1: #e5e5e6da;
 
 
@@ -215,7 +233,7 @@ body:not(.user-is-tabbing) a:focus {
 
 .btn {
     position: relative;
-    display: inline-block;
+    display: var(--white);
     padding: 1rem 4.2rem;
     text-decoration: none;
     color: inherit;
@@ -264,7 +282,7 @@ body:not(.user-is-tabbing) a:focus {
     position: relative;
     display: inline-block;
     padding: .6rem;
-    color: inherit;
+    color: var(--white);
     text-decoration: none;
     border-bottom: 1px solid var(--pink);
 }
@@ -339,11 +357,13 @@ body:not(.user-is-tabbing) a:focus {
     display: flex;
     justify-content: flex-end;
     padding: var(--gutter-normal) 0;
+    color: var(--front);
 }
 
 .nav__items {
     display: flex;
     list-style: none;
+    color: var(--front);
 }
 
 .nav__item:not(:last-child) {
@@ -373,7 +393,7 @@ body:not(.user-is-tabbing) a:focus {
     display: inline-block;
     padding: 1rem 0;
     text-decoration: none;
-    color: inherit;
+    color: #4ea613;
     transition: all .2s;
 }
 
@@ -404,8 +424,8 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 
 .header {
-    background: linear-gradient(rgba(0,0,0, .1), rgba(0,0,0, .4)), 
-        url('./images/header.jpg');
+    background: linear-gradient(rgba(7, 17, 9, .1), rgba(7, 17, 9, .4)), 
+        url('./images/20230416_134045.jpg');
     height: 100vh;
     background-size: cover;
     background-position: center;
@@ -417,6 +437,7 @@ body:not(.user-is-tabbing) a:focus {
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
+    color: var(--front);
 }
 
 .header__text p {
@@ -465,6 +486,7 @@ body:not(.user-is-tabbing) a:focus {
 .work__links {
     display: flex;
     align-items: center;
+    color: var(--white);
 }
 
 .work__text {
@@ -505,31 +527,6 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
-/* --------------------------------------- */
-/* ----- Clients ----- */
-/* --------------------------------------- */
-
-.client__logos {
-    display: flex;
-    justify-content: space-between;
-    filter: invert(100%) grayscale(100%) opacity(.8);
-}
-
-.client__logo {
-    height: 6.5rem;
-    max-width: 18rem;
-}
-
-@media(max-width: 1240px) {
-    .client__logos {
-        overflow-x: scroll;
-        padding: var(--gutter-normal);
-    }
-
-    .client__logo:not(:last-of-type) {
-        margin-right: var(--gutter-medium);
-    }
-}
 
 /* --------------------------------------- */
 /* ----- About ----- */
@@ -560,6 +557,32 @@ body:not(.user-is-tabbing) a:focus {
     .about__photo-container {
         flex: 1;
         margin: 0 var(--gutter-huge) 0 0;
+    }
+}
+/* --------------------------------------- */
+/* ----- Clients ----- */
+/* --------------------------------------- */
+
+.client__logos {
+    display: flex;
+    width: 1000px;
+    justify-content: space-between;
+    filter: opacity(1);
+}
+
+.client__logo {
+    height: 40rem;
+    max-width: 60rem;
+}
+
+@media(max-width: 2240px) {
+    .client__logos {
+        overflow-x: scroll;
+        padding: var(--gutter-normal);
+    }
+
+    .client__logo:not(:last-of-type) {
+        margin-right: var(--gutter-medium);
     }
 }
 
