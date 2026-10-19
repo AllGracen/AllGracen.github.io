@@ -1,0 +1,659 @@
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="shortcut icon" type="image/png" href="./images/IMG_1872~2.JPG" />
+
+  <!-- Put your site title here -->
+  <title>
+    Gracen Alleman
+  </title>
+
+  <meta name="description" content="A person that loves the human side of data science and a ubin designer in training, with a big emphasis on community.">
+  <!-- Add some coding keywords below, Ex: (React, CSS etc) -->
+  <meta name="keywords" content="Gracen Alleman, Plotly, Python,R Studio, Power BI, QGIS" />
+  <link rel="stylesheet" href="index.css" />
+</head>
+
+<body>
+
+  <!-- ***** Header ***** -->
+
+    <div class="row">
+      <nav class="nav" role="navigation">
+        <ul class="nav__items">
+          <li class="nav__item">
+            <a href="index.html" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">Projects</a></li>
+          <li class="nav__item">
+            <a href="projects.html" class="nav__link">Environmental Modeling Project</a></li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About</a>
+          </li>
+          <li class="nav__item">
+            <a href="#contact" class="nav__link">Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+
+    <main role="main">
+        <section class="work" id="work">
+      <div class="row">
+        <h2>Environmental Modeling Project Suitability Analysis</h2>
+        <div class="project__boxes">
+
+          <!-- Each div with the project__box class is a project. -->
+
+          <div class="project__box">
+            <div class="project__text" id="CoverPage">
+              <h3>Cover page</h3>
+              <p>
+                This work was done as a part of a lab in GEOG 5090: Environmental Modeling with Geographic Information Systems at the University of Colorado, Denver.
+                I used National Park Service Data, but the outputs for this work were never used to make any decisions for the National Park Service nor are they aware that I used their data for educational purposes.
+                This project is to show my knowledge and ability to perform suitability analysis, and sensitivity analysis with real data. 
+              </p>
+            </div>
+          </div> 
+
+          <div class="project__box">
+            <div class="project__text" id="TableOfContents">
+              <h3>Table of contents</h3>
+                <div class="project__text">
+                    <nav class="tc" role="navigation">
+                        <ul class="tc__items">
+                        <li class="tc__item">
+                            <a href="#CoverPage" class="tc__link">Cover Page</a></li>
+                        <li class="tc__item">
+                            <a href="#TableOfContents" class="tc__link">Table of cCntents</a></li>
+                        <li class="tc__item">
+                            <a href="#ListOfFigures" class="tc__link">List of Figures</a></li>
+                        <li class="tc__item">
+                            <a href="#ListOfTables" class="tc__link">List of Tables</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#ExecutiveSummary" class="tc__link">Executive Summary</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#Methodology" class="tc__link">Methodology</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#Outputs" class="tc__link">Outputs</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#References" class="tc__link">References</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#Appendix" class="tc__link">Appendix</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+          </div>
+
+          <div class="project__box">
+            <div class="project__text" id="ListOfFigures">
+              <h3>List of figures</h3>
+                <div class="project__text">
+                    <nav class="tc" role="navigation">
+                        <ul class="tc__items">
+                        <li class="tc__item">
+                            <a href="#EMFigue1" class="tc__link">Figure 1: Logic Flowchart</a></li>
+                        <li class="tc__item">
+                            <a href="#EMFigue2" class="tc__link">Figure 2: Procedures Flowchart</a></li>
+                        <li class="tc__item">
+                            <a href="#EMFigue3" class="tc__link">Figure 3: Rook Neighbors</a></li>
+                        <li class="tc__item">
+                            <a href="#EMFigue4" class="tc__link">Figure 4: Queen Neighbors</a></li>
+                        <li class="tc__item">
+                            <a href="#EMFigue5" class="tc__link">Figure 5: Map of Roads and Forest Units in One Raster</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#EMFigue6" class="tc__link">Figure 6: New Flowchart</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#EMFigue7" class="tc__link">Figure 7: Glacier National Park Layout at 200m of Water Distance</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#EMFigue8" class="tc__link">Figure 8: Glacier National Park Layout at all water Distances (100, 200, and 500m)</a>
+                        </li>
+                        <li class="tc__item">
+                            <a href="#EMFigue9" class="tc__link">Figure 9: 3D Map fly-by of Glacier National Park</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+          </div>
+
+        <div class="project__box">
+            <div class="project__text" id="ListOfTables">
+            <h3>List of tables</h3>
+                <div class="project__text">
+                    <nav class="tc" role="navigation">
+                        <ul class="tc__items">
+                        <li class="tc__item">
+                            <a href="#EMtable1" class="tc__link">Table 1: Data Used</a></li>
+                        <li class="tc__item">
+                            <a href="#EMTable2" class="tc__link">Table 2: 100 Meter Buffer Area per Patch</a></li>
+                        <li class="tc__item">
+                            <a href="#EMTable2" class="tc__link">Table 3: 200 Meter Buffer Area per Patch</a></li>
+                        <li class="tc__item">
+                            <a href="#EMTable4" class="tc__link">Table 4: Data Metadata Table</a>
+                        </li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+
+        <div class="project__box">
+            <div class="project__text" id="ExecutiveSummary">
+              <h3>Executive summary</h3>
+             <object data="EnvironmentModeling/Alleman_ExecutiveSummary.pdf" type="application/pdf" class="work__image" style="width:100%;max-width:none;height:1300px;">
+                <p><a href="EnvironmentModeling/Alleman_ExecutiveSummary.pdf" download>Download the Executive Summary (Word document)</a></p>
+             </object>
+            </div>
+        </div> 
+
+        <div class="project__box" id="Methodology">
+            <div class="project__text" id="EMtable1">
+              <h3>Methodology</h3>
+              <p>
+                The data used in this project was obtained from the National Park Service (NPS) open data portal. 
+                Some of the data had the extension e.00 which is an ArcGIS-specific data format that allows geospatial data to move between GIS platforms, including mobile GIS. 
+                The Interoperability extension is an ArcGIS extension that lets Arc read the .e00 file type.
+                The following layers were used in the analysis:
+              </p>
+              <table>
+                <caption>Table 1: Data Used</caption>
+                <tr>
+                  <th>Layer Name</th>
+                  <th>Source</th>
+                  <th>Description</th>
+                </tr>
+                <tr>
+                  <td>boundary2003</td>
+                  <td>NPS open data portal</td>
+                  <td>The boundary layer sets the extent of the study area and is the bounds of Glacier National Park</td>
+                </tr>
+                <tr>
+                  <td>glac_lakes</td>
+                  <td>NPS open data portal</td>
+                  <td>The lakes layer contains information about the location and characteristics of lakes within the study area</td>
+                </tr>
+                <tr>
+                  <td>glac_streams</td>
+                  <td>NPS open data portal</td>
+                  <td>The streams layer contains information about the location and characteristics of streams within the study area</td>
+                </tr>
+                <tr>
+                  <td>GLAC_Trails_In</td>
+                  <td>NPS open data portal</td>
+                  <td>The trails layer contains information about the location and characteristics of trails within the study area</td>
+                </tr>
+                <tr>
+                  <td>GLAC_Roads_In</td>
+                  <td>NPS open data portal</td>
+                  <td>The roads layer contains information about the location and characteristics of roads within the study area and some roads leading to Glacier National Park</td>
+                </tr>
+                <tr>
+                  <td>glacveg</td>
+                  <td>NPS open data portal</td>
+                  <td>The vegetation layer contains information about the location and characteristics of vegetation within the study area</td>
+              </table>
+              <p>
+                With the metadata for glacveg I was able to find out the quality of the data and the methods used to collect it. 
+                The study area was the whole of the WGIPP Glacier National Park. 
+                The methods involved taking 1618 aerial photographs at a scale of 1:15840 and then classifying based on the aerial photographs. 
+                It is at this time important to note that there is a Canadian portion of Glacier National Park called Waterton Lakes National Park that is not included in this analysis.
+              </p>
+              <p>
+                For the Data Engineering portion of the project I reprojected the older NAD27 coordinate system to the newer NAD83 coordinate system. 
+                Data Engineering is a form of data cleaning or massaging to fit what analysis needs to be done. 
+                Things like handling null values, making clean data types, and having the data readable in the computer program you are using, or, in the case of GIS platforms, reprojecting.
+                I chose to reproject to NAD83 because it is the newer datum, and if I were to present the data or outputs, it would make it easier for the next person. 
+                Also, all of the data is in one projection, just different datums, making a reprojection trivial. 
+            </div>
+
+            
+            <div class="project__box">
+                <div class="project__text">
+                <p>
+                    Here is a high-level flowchart showing the steps taken to complete the project.
+                </p>
+                <caption>Figure 1: Logic Flowchart</caption>
+                <img src="EnvironmentModeling/Alleman_Lab2logic.jpg" class="work__image" alt="High-Level Flowchart" id="EMFigue1">
+            </div>
+
+            <div class="project__box">
+                <div class="project__text">
+                <p>
+                    Here is the in-depth flowchart showing the technical steps, and the geoprocessing tools used.
+                    The red hexagons represent the geoprocessing tools used, rectangles represent the data inputs and outputs where the blue circles are the final products.
+                </p>
+                <caption>Figure 2: Procedures Flowchart</caption>
+                <img src="EnvironmentModeling/Alleman_Lab2procedures.jpg" class="work__image" alt="In-Depth Flowchart" id="EMFigue2">
+            </div>
+            <div class="project__text">
+                <p>
+                    Using the lake data, I found that Glacier National Park had 1292 lakes. I buffered the lakes by 200 meters to create a buffer zone around the lakes.
+                    I then performed a similar process to the stream layer affter convting the shapefile to a raster I then used Euclidian distance and reclassify to perform a buffer of 200 meters around the streams.
+                    Using the raster caulculator I used the & function to combine the two buffer zones of water bodies into one raster layer.
+                    I then added that to a filtered vegetation layer to create a raster layer of forested areas that are not within 200 meters of a water body. 
+                    The & function was used instead of * because null values are not treated as 0, and the * function would have created a raster layer of all null values.
+                    This resulted in 131,365 hectares of dry forested areas. 
+                </p>
+            </div>
+        </div>
+        <div class="work__box">
+            <div class="work__text">
+            <p>
+                After creating the raster layer of dry forested areas, I then used zonal geometry to group the dry forest patches.
+                The neighbor function is all about how one defines a neighbor. 
+                FOUR has four neighbors and looks like figure 3 where the EIGHT has 8 neighbors and looks like figure 4.
+                After using the zonal geometry tool I found 3,026 patches. After narrowing to patches greater than 1,000 hectares, 22 patches were identified. 
+                The median area of the patches greater than 1,000 hectares was 2,189 hectares, where the lagest pach was 58,780 hectares.
+            </p>
+            </div>
+            <caption>Figure 3: Rook Neighbors</caption>
+            <img src="EnvironmentModeling/RookNeighbors.png" class="work__image" alt="Rook Neighbors" id="EMFigue3"/>
+            <caption>Figure 4: Queen Neighbors</caption>
+            <img src="EnvironmentModeling/QueenNeighbors.png" class="work__image" alt="Queen Neighbors" id="EMFigue4"/>
+        </div>
+        <div class="work__box">
+            <div class="work__text">
+            <p>
+                I then used used this function to create a new map that show roads alongside the identified patches in the same raster layer.
+                ( Con(IsNull(“ForMngUnitst”), 0, “ForMngUnitst”) *1000 ) + ( Con(IsNull(“RoadsGrd”), 0, “RoadsGrid) * 10 ). 
+                One has to use the Con function because of the presence of null values in the raster layers; adding the two layers together would have resulted in an overabundance of null values in the output raster layer.
+            </p>
+            </div>
+            
+            <div class="work__image-box">
+            <caption>Figure 5: Map of Roads and Forest Units in all Raster</caption>
+            <img src="EnvironmentModeling/RdsUnitsDiffMagFix.png" class="work__image" alt="Map of Roads and Forest Units" id="EMFigue5"/>
+            </div>
+        </div>
+        <div class="work__box">
+            <div class="work__text">
+            <p>
+                I also performed a sensitivity analysis on distance from water bodies to find the best distance.
+                I ran the same analysis as before but with a buffer of 100 meters, 200 meters, and 500 meters.
+                The 500 meter buffer had the least amount of dry forested areas greater than 1,000 hectares at 1,196 hectares in only one patch.
+                The 200 meter buffer had 43,856 hectares of total management area and 22 patches where the 100 meter buffer had 89,202 hectares of total management area and 35 patches. 
+            </p>
+            </div>
+            
+            <div class="work__image-box">
+            <caption>Figure 6: New Flowchart</caption>
+            <img src="EnvironmentModeling/Alleman_Lab2Part2procedures.jpg" class="work__image" alt="Map of Roads and Forest Units" id="EMFigue6"/>
+            </div>
+
+        </div>
+        <div class="project__box" id="Outputs">
+            <div class="project__text">
+              <h3>Outputs</h3>
+              <p>
+                The outputs are the different map layouts showing the maps and table outputs at different water buffer distances. 
+                The water buffer distance affect the area in the management units and number of management units.
+                The other inputs would also have affecteed the size and number of management units like forest type and size greater than 1000 hectares, however these values were not checked in the sensivity analysis. 
+              </p>
+            </div>
+        
+            
+            <div class="project__box">
+                <div class="project__text">
+                <p>
+                    Here is the final output map showing the identified patches of dry forested areas that are not within 200 meters of a water body, and greater than 1000 hectares.
+                </p>
+                </div>
+                
+                <div class="work__image-box">
+                <caption>Figure 7: Glacier National Park Layout at 200m of Water Distance</caption>
+                <img src="EnvironmentModeling/Alleman_Layout_Lab2-1.jpg" class="work__image" alt=" Glacier National Layout 200m of Water Distance" id="EMFigue7"/>
+            </div>
+        </div>
+        <div class="project-row">
+            <div class="project-text">
+            <p>
+                Table 2 shows the area of each identified patch of dry forested areas that are not within 200 meters of a water body, and greater then 1000 hectares.
+            </p>
+            <p> Table 3 shows the 200 meter buffer around water, creating 22 unique forested patches greater than 1000 hectares. </p>
+            </div>
+
+            <div class="table-group" id="EMTable2">
+            <p class="table-caption">Table 2: 100 Meter Buffer Area per Patch</p>
+            <div class="table-group__tables">
+            <table class="Table2">
+            <tr>
+                <th >Patch ID</th>
+                <th >Area (ha)</th>
+            </tr>
+            <tr>
+                <td>1</td>
+                <td>1,032</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>2,029</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>1,714</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>1,760</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>4,704</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>3,418</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>1,807</td>
+            </tr>
+            <tr>
+                <td>8</td>
+                <td>2,068</td>
+            </tr>
+            <tr>
+                <td>9</td>
+                <td>1,246</td>
+            </tr>
+            <tr>
+                <td>10</td>
+                <td>1,115</td>
+            </tr>
+            <tr>
+                <td>11</td>
+                <td>1,170</td>
+            </tr>
+            <tr>
+                <td>12</td>
+                <td>1,447</td>
+            </tr>
+            <tr>
+                <td>13</td>
+                <td>1,765</td>
+            </tr>
+            <tr>
+                <td>14</td>
+                <td>1,017</td>
+            </tr>
+            <tr>
+                <td>15</td>
+                <td>2,809</td>
+            </tr>
+            <tr>
+                <td>16</td>
+                <td>1,693</td>
+            </tr>
+            <tr>
+                <td>17</td>
+                <td>2,287</td>
+            </tr>
+            <tr>
+                <td>18</td>
+                <td>3,235</td>
+            </tr>
+            </table>
+            <table class="Table2">
+            <tr>
+                <th >Patch ID</th>
+                <th >Area (ha)</th>
+            </tr>
+            <tr>
+                <td>19</td>
+                <td>11,103</td>
+            </tr>
+            <tr>
+                <td>20</td>
+                <td>2,263</td>
+            </tr>
+            <tr>
+                <td>21</td>
+                <td>7,515</td>
+            </tr>
+            <tr>
+                <td>22</td>
+                <td>3,643</td>
+            </tr>
+            <tr>
+                <td>23</td>
+                <td>2,439</td>
+            </tr>
+            <tr>
+                <td>24</td>
+                <td>1,018</td>
+            </tr>
+            <tr>
+                <td>25</td>
+                <td>4,094</td>
+            </tr>
+            <tr>
+                <td>26</td>
+                <td>3,198</td>
+            </tr>
+            <tr>
+                <td>27</td>
+                <td>3,210</td>
+            </tr>
+            <tr>
+                <td>28</td>
+                <td>1,762</td>
+            </tr>
+            <tr>
+                <td>29</td>
+                <td>1,233</td>
+            </tr>
+            <tr>
+                <td>30</td>
+                <td>2,170</td>
+            </tr>
+            <tr>
+                <td>31</td>
+                <td>1,166</td>
+            </tr>
+            <tr>
+                <td>32</td>
+                <td>1,828</td>
+            </tr>
+            <tr>
+                <td>33</td>
+                <td>3,166</td>
+            </tr>
+            <tr>
+                <td>34</td>
+                <td>2,003</td>
+            </tr>
+            <tr>
+                <td>35</td>
+                <td>1,175</td>
+            </tr>
+            <tr> 
+                <td>Total</td>
+                <td>89,202</td>
+            </tr>
+            </table>
+            </div>
+            </div>
+
+            <div class="table-group">
+            <p class="table-caption">Table 3: 200 Meter Buffer Area per Patch</p>
+            <div class="table-group__tables">
+            <table class="Table2">
+            <tr>
+                <th >Patch ID</th>
+                <th >Area (ha)</th>
+            </tr>
+            <tr><td>1</td><td>1,621</td></tr>
+            <tr><td>2</td><td>1,449</td></tr>
+            <tr><td>3</td><td>1,288</td></tr>
+            <tr><td>4</td><td>2,695</td></tr>
+            <tr><td>5</td><td>1,721</td></tr>
+            <tr><td>6</td><td>1,326</td></tr>
+            <tr><td>7</td><td>1,201</td></tr>
+            <tr><td>8</td><td>1,305</td></tr>
+            <tr><td>9</td><td>1,915</td></tr>
+            <tr><td>10</td><td>2,157</td></tr>
+            <tr><td>11</td><td>3,240</td></tr>
+            </table>
+            <table class="Table2">
+            <tr>
+                <th >Patch ID</th>
+                <th >Area (ha)</th>
+            </tr>
+            <tr><td>12</td><td>1,719</td></tr>
+            <tr><td>13</td><td>5,730</td></tr>
+            <tr><td>14</td><td>1,302</td></tr>
+            <tr><td>15</td><td>2,895</td></tr>
+            <tr><td>16</td><td>2,957</td></tr>
+            <tr><td>17</td><td>1,188</td></tr>
+            <tr><td>18</td><td>2,364</td></tr>
+            <tr><td>19</td><td>1,507</td></tr>
+            <tr><td>20</td><td>1,475</td></tr>
+            <tr><td>21</td><td>1,217</td></tr>
+            <tr><td>22</td><td>1,584</td></tr>
+            <tr><td>Total</td><td>43,856</td></tr>
+            </table>
+            </div>
+            </div>
+        </div>
+        <div class="project__box">
+            <div class="project__text">
+            <p>
+                Here is the final output map showing the identified paches of dry forested areas, greater than 1,000 hectares at a variety of water buffers side by side for comparison.
+            </p>
+            </div>
+            
+            <div class="work__image-box">
+            <caption>Figure 8: Glacier National Park Layout at all water Distances (100, 200, and 500m)</caption>
+            <img src="EnvironmentModeling/Lab2Part4Layout-1.jpg" class="work__image" alt=" Glacier National Layout of all water Distances" id="EMFigue8"/>
+                        </div>
+                    </div>
+                    <div class="work__box">
+            <div class="work__text">
+            <p>
+                This is showing a fly-by of the map with hillshade on, with 200 meter water buffer layered over top. 
+            <a href="EnvironmentModeling/MAP3D.mp4" class="btn">Link to file</a>
+            </div>
+            
+            <div class="work__image-box" id="EMFigue9">
+            <p>Figure 9: 3D Map fly-by of Glacier National Park</p>
+            <video src="EnvironmentModeling/MAP3D.mp4" class="work__image" controls muted loop playsinline></video>
+            </div>
+        </div>
+
+        <div class="project__box">
+            <div class="project__text" id="References">
+              <h3>References</h3>
+                <p>Esri. (n.d.). ArcGIS basemap styles. https://developers.arcgis.com/documentation/mapping-and-location-services/mapping/basemaps/arcgis-styles-tiles/</p>
+                <p>OpenStreetMap contributors. (n.d.). Copyright and license. https://www.openstreetmap.org/copyright</p>
+                <p>National Park Service. (n.d.). NPS DataStore Home. https://irma.nps.gov/DataStore/ </p>
+                <p>Razavi, S.,et al. (2021). The future of sensitivity analysis: An essential discipline for systems modeling and policy support. Environmental Modelling & Software, 137, Article 104954. https://doi.org/10.1016/j.envsoft.2020.104954</p>
+                <p>Saltelli, A., & Annoni, P. (2010). How to avoid a perfunctory sensitivity analysis. Environmental Modelling & Software, 25(11), 1508–1517. https://www.sciencedirect.com/science/article/abs/pii/S1364815210001180</p>
+                <p>U.S. National Vegetation Classification. (n.d.). U.S. National Vegetation Classification. https://usnvc.org/</p>
+              </p>
+            </div>
+          </div> 
+        </div>
+
+        <div class="project__box">
+            <div class="project__text" id="Appendix">
+              <h3>Appendix</h3>
+              <table>
+                <caption id="EMTable4">Table 4: Data Metadata Table</caption>
+                <tr>
+                  <th>Layer Name</th>
+                  <th>Source</th>
+                  <th>Metadata Location</th>
+                  <th>Projection</th>
+                  <th>Scale</th>
+                </tr>
+                <tr>
+                  <td>boundary2003</td>
+                  <td>NPS open data portal</td>
+                  <td>"C:\Lab2Data\records-1042581\OriginalMetadata_NPSDataStoreCode_1042581.xml"</td>
+                  <td>NAD 1983 UTM Zone 12N (Transverse Mercator)</td>
+                  <td>1:24000</td>
+                </tr>
+                <tr>
+                  <td>glac_lakes</td>
+                  <td>NPS open data portal</td>
+                  <td>"C:\Lab2Data\records-1019882\OriginalMetadata_NPSDataStoreCode_1019882.xml"</td>
+                  <td>NAD 1927 UTM Zone 12N (Transverse Mercator)</td>
+                  <td>1:24000</td>
+                </tr>
+                <tr>
+                  <td>glac_streams</td>
+                  <td>NPS open data portal</td>
+                  <td>"C:\Lab2Data\records-1034779\OriginalMetadata_NPSDataStoreCode_1034779.xml"</td>
+                  <td>NAD 1927 UTM Zone 12N (Transverse Mercator)</td>
+                  <td>1:24000</td>
+                </tr>
+                <tr>
+                  <td>GLAC_Trails_In</td>
+                  <td>NPS open data portal</td>
+                  <td>"C:\Lab2Data\records-2300936\GLAC_Trails_Sept2023\GLAC_Trails_ln.shp.xml"</td>
+                  <td>NAD 1983 (2011) UTM Zone 12N (Transverse Mercator)</td>
+                  <td>1:24000</td>
+                </tr>
+                <tr>
+                  <td>GLAC_Roads_In</td>
+                  <td>NPS open data portal</td>
+                  <td>"C:\Lab2Data\records-2300937\GLAC_Roads_Sept2023\GLAC_Roads_ln.shp.xml"</td>
+                  <td>NAD 1983 (2011) UTM Zone 12N (Transverse Mercator)</td>
+                  <td>1:24000</td>
+                </tr>
+                <tr>
+                  <td>glacveg</td>
+                  <td>NPS open data portal</td>
+                  <td>“C:/AppData/Local/Temp/ArcGISProTemp11872/1hkcqmqd.ujd.htm”</td>
+                  <td>NAD 1983 UTM Zone 12N (Transverse Mercator)</td>
+                  <td>1:24000</td>
+              </table>
+            </div>
+          </div> 
+        </div>
+
+        </div>
+        </div>
+    </main>
+<!-- ***** Footer ***** -->
+
+  <footer role="contentinfo" class="footer">
+    <div class="row">
+      <!-- Update the links to point to your accounts -->
+      <ul class="footer__social-links">
+        <li class="footer__social-link-item">
+          <a href="https://github.com/AllGracen/" title="Link to Github Profile">
+            <img src="./images/github.svg" class="footer__social-image" alt="Github">
+          </a>
+        </li>
+        <li class="footer__social-link-item">
+          <a href="https://www.linkedin.com/in/gracenalleman/">
+            <img src="./images/linkedin.svg" title="Link to Linkedin Profile" class="footer__social-image" alt="Linkedin">
+          </a>
+        </li>
+      </ul>
+
+    </div>
+  </footer>
+
+  <a href="#top" class="back-to-top" title="Back to Top">
+    <img src="./images/arrow-up.svg" alt="Back to Top" class="back-to-top__image"/>
+  </a>
+  <script src="./index.js"></script>
+</body>
+
+</html>
