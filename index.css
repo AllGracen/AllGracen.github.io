@@ -419,6 +419,77 @@ body:not(.user-is-tabbing) a:focus {
     background: var(--pink);
 }
 
+
+
+
+.tc {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: var(--gutter-normal) 0;
+    color: var(--front);
+}
+
+/* Table of Contents list */
+.tc__items {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    padding-left: 0;
+}
+
+/* Spacing between links */
+.tc__item:not(:last-child) {
+    margin-bottom: var(--gutter-normal);
+}
+
+/* Table of Contents links */
+.tc__link {
+    position: relative;
+    display: inline-block;
+    padding: 0.5rem 0;
+    text-decoration: none;
+    color: #4ea613;
+    transition: all 0.2s;
+}
+
+/* Hover effect */
+.tc__link:hover {
+    color: var(--pink);
+}
+
+/* Underline animation */
+.tc__link::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 100%;
+    display: inline-block;
+    height: 2px;
+    background: var(--pink);
+    transition: all 0.25s cubic-bezier(1, 0.68, 0.16, 0.9);
+}
+
+.tc__link:hover::after {
+    right: 0;
+}
+
+/* Small screens */
+@media (max-width: 500px) {
+    .tc {
+        align-items: flex-start;
+    }
+}
+
+
+
+
 /* --------------------------------------- */
 /* ----- Header ----- */
 /* --------------------------------------- */
@@ -527,6 +598,109 @@ body:not(.user-is-tabbing) a:focus {
     }
 }
 
+.work__image {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    height: auto;
+    margin: 0 auto;
+}
+
+
+
+/* Paragraph takes up the left side */
+.work__box--table .work__text {
+    flex: 1;
+    min-width: 0;
+}
+.patch-table {
+    width: 300px;
+    max-width: 100%;
+    flex: 0 0 300px;
+    border-collapse: collapse;
+    table-layout: auto;
+}
+
+.patch-table th,
+.patch-table td {
+    border: 1px solid black;
+    padding: 6px 10px;
+    text-align: center;
+    font-size: 0.9rem;
+}
+
+.patch-table caption {
+    caption-side: top;
+    padding: 8px;
+    font-weight: bold;
+}
+
+.work__box--table {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.work__box--table .work__text {
+    flex: 1;
+    min-width: 0;
+}
+
+
+
+
+
+.project-row {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+}
+
+.project-text {
+  flex: 0 1 300px;
+  text-align: left;
+}
+
+.table-group__tables {
+  display: flex;
+  align-items: flex-start;
+  gap: 12px;
+}
+
+.table-caption {
+  text-align: center;
+  font-size: 15px;
+  margin: 0 0 8px;
+}
+.Table2 {
+  width: auto;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+.Table2 th,
+.Table2 td {
+  padding: 12px 24px;
+}
+
+#Table3 {
+  width: auto;
+  border-collapse: collapse;
+  font-size: 12px;
+}
+
+#Table3 th,
+#Table3 td {
+  padding:12px 24px;
+}
+
+#Table2Caption {
+    text-align: center !important;
+    font-size: 15px;
+    margin-bottom: 8px;
+}
 
 /* --------------------------------------- */
 /* ----- About ----- */
@@ -562,6 +736,39 @@ body:not(.user-is-tabbing) a:focus {
 /* --------------------------------------- */
 /* ----- Clients ----- */
 /* --------------------------------------- */
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+}
+
+.project .row {
+    width: 100%;
+    max-width: none;
+    margin: 0;
+}
+
+/* Make the project container fill the width */
+.project__box {
+    width: 100%;
+    display: block;
+    margin-left: 0;
+    margin-right: 0;
+}
+
+/* Make the text take up the full width */
+.project__text {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+    text-align: center;
+}
 
 .client__logos {
     display: flex;
