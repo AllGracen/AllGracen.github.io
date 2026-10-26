@@ -24,7 +24,6 @@
     float: left;
     width: 50%;
     padding: 10px;
-    height: 300px; /* Should be removed. Only for demonstration */
   }
   
   /* Clear floats after the columns */
@@ -489,6 +488,74 @@ body:not(.user-is-tabbing) a:focus {
 
 
 
+/* Header background */
+.site-header {
+    background-color: #2f4f4f;
+    padding: 12px 24px;
+}
+
+/* Navigation links */
+.navbar {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 24px;
+}
+
+
+.nav-link {
+    display: inline-flex;
+    align-items: center;
+    line-height: 1;
+    padding: 8px 0;
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+
+
+
+.nav-link:hover {
+    text-decoration: underline;
+}
+
+/* Projects dropdown */
+.dropdown {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    min-width: 220px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    z-index: 10;
+}
+
+/* Dropdown links */
+.dropdown-menu a {
+    display: block;
+    padding: 10px 14px;
+    color: #2f4f4f;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.dropdown-menu a:hover {
+    background-color: #e8eeee;
+}
+
+/* Show dropdown on hover or keyboard focus */
+.dropdown:hover .dropdown-menu,
+.dropdown:focus-within .dropdown-menu {
+    display: block;
+}
+
 
 /* --------------------------------------- */
 /* ----- Header ----- */
@@ -606,6 +673,17 @@ body:not(.user-is-tabbing) a:focus {
     margin: 0 auto;
 }
 
+.tools-list {
+  margin-top: 20px;
+}
+.tools-list {
+  margin-bottom: 0;
+  padding-left: 25px;
+}
+
+.tools-list {
+  margin-bottom: 12px;
+}
 
 
 /* Paragraph takes up the left side */
