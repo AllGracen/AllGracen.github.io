@@ -27,21 +27,21 @@
 
 <header class="header" role="banner" id="top">
     <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item">
-            <a href="project.html" class="nav__link">Environmental Modeling Project</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
+      <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+
+        <div class="dropdown">
+          <a href="projects.html" class="nav-link">Projects ▾</a>
+
+            <div class="dropdown-menu">
+                <a href="projects.html">Environmental Modeling Project</a>
+                <a href="hazard.html">GEOG 5230 Hazard Mitigation Class</a>
+            </div>
+        </div>
+
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
       </nav>
     </div>
     <div class="header__text-box row">
@@ -96,67 +96,158 @@
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Work for GEOG 5230 Hazard Mitigation and Vulnerability Assessment</h3>
+              <h3>Denver HOA Tree Inventory</h3>
               <p>
-                Here is a map showing the evaluation routes in case of a earthquake. 
-                This work was done for a class at University of Colorado Denver, GEOG 5230 Hazard Mitigation and Vulnerability Assessment.
+                This project was done for an HOA in Denver called Hillanses Garden Village (HGV). 
+                The work wast idfify what trees had been removed cense the last tree inventory and where the trees were located. 
+                The goola my map is showing wher the trees are removed and what trees are still there. 
+                My map was used becues of HOA resues and prosciesy with GIS platormas my map was the best choice.
+                The I alos worked the HOA to make a map of onsherp of the ladandscaps and trees in the HOA.
               </p>
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1Gm6UHa-X934rR0TytEn4deoD-jfHwlo&ehbc=2E312F" width="640" height="480">
+              </iframe>
               <div class="work__links">
-                <a href="https://www.google.com/maps/d/u/0/edit?mid=1CHZJCpL_fKY52f4AIBTcJLWpqYvNU3s&ll=39.74682440633587%2C-105.00008174109944&z=19"> 
-                  <img src="./images/mapspointer.svg" class="work__code" title="View Source Code" alt="GitHub">
+                <a href="https://github.com/AllGracen/HGV_HOA"> 
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
+            <div class="row">
+                <div class="client__logos">
+                  <img src="./images/LayoutTrees.jpg" class="client__logo" alt="HOA_trees" />
+                  <img src="./images/LayoutLandscape.jpg" class="client__logo" alt="HOA_landscape" />
+                  <img src="./images/HGV_things2.svg" class="client__logo" alt="HOA_Assets2" />
+                  <img src="./images/LayoutAssets.jpg" class="client__logo" alt="HOA_Assets" />
+                </div>
             </div>
-            
-            <iframe src="https://www.google.com/maps/d/u/0/embed?mid=1CHZJCpL_fKY52f4AIBTcJLWpqYvNU3s&ehbc=2E312F" width="640" height="480"></iframe>
           </div>
 
           <div class="work__box">
             <div class="work__text">
-              <h3>Work for GEOG 5230 Hazard Mitigation and Vulnerability Assessment</h3>
+              <h3>Research Assistantship: Analyzing Denver Changes to School Change</h3>
               <p>
-                Here is a presentation talking about Flood mapping tools in Lyons Colorado. 
-                This work was done for a class at University of Colorado Denver, GEOG 5230 Hazard Mitigation and Vulnerability Assessment.
+                This project is bing done for an RA position at University of Colorado Denver.
               </p>
-            </div>
-            
-            <iframe src="https://prezi.com/p/embed/fcDXkhr9ar51LQyL4wWN/" id="iframe_container" frameborder="0" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen="" allow="autoplay; fullscreen" height="315" width="560"></iframe>
-          </div>
-
-          <div class="work__box">
-            <div class="work__text">
-              <h3>Work for GEOG 5230 Hazard Mitigation and Vulnerability Assessment</h3>
-              <p>
-                Here is a GIS story map talking about droughts on the Western Slope of Colorado. 
-                This work was done for a class at University of Colorado Denver, GEOG 5230 Hazard Mitigation and Vulnerability Assessment.
-                There is a link to the story map below.
-              </p>
+              <img src="./images/1680x1050-work-work-in-progress.gif" class="work__code" alt="Work in progress">
               <div class="work__links">
-                <a href="https://storymaps.arcgis.com/stories/dbac9dc15e814cffa5b0588523c8933e" class="btn">View Story Map
+                <a href="https://github.com/AllGracen/RA_School_Change"> 
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
-            
-            <iframe src="https://storymaps.arcgis.com/stories/dbac9dc15e814cffa5b0588523c8933e" width="100%" height="500px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
+            <div class="work__image-box">
+              <img src="./images/1680x1050-work-work-in-progress.gif" class="work__image" alt="Work in progress" />
+            </div>
           </div>
-
+            
           <div class="work__box">
             <div class="work__text">
-              <h3>Work for GEOG 5230 Hazard Mitigation and Vulnerability Assessment</h3>
+              <h3>NC DOT-Power BI Dashboard and Highway Event Heatmap</h3>
               <p>
-                Here is a GIS story map talking about vulnerability in Asheville North Carolina. 
-                This work was done for a class at University of Colorado Denver, GEOG 5230 Hazard Mitigation and Vulnerability Assessment.
-                There is a link to the story map below.
+                As an interntership I worked for the North Carolina Department of Transportation. 
+                I worked in two departments: the Signal System Timing and Operations department and the Transportation Mobility and Safety Division.
+                At both I was given the opportunity to work with compelling mentors, complex data sets, and intresting projects. 
+                I made a Power BI dashboard for aggregating the number of cars on an on-ramp and I made a heatmap showing where congestion announcements were happening. 
               </p>
+              <p>
+                There is a ramp meter with 3 sensor groups at the westbound entrance ramp at 540 and Falls of Neuse in Raleigh.
+                There is a meter group at the light letting people in, one on 540 measuring the speed and density of oncoming vehicles, and one at the beginning of the light measuring the length of the queue. 
+                The goal of this project was to make data-driven decisions about the long-term design of the road, and find ways to use and visualize the changing data. 
+                They contain average traffic speed (MPH), volume, and occupancy. 
+                I cleaned the data in Python, and then updated the Power BI page every week when new data was available.
+              </p>
+              <p>
+                I used Drivewise data to make a heat map of traffic event data over Clear Guide data.
+                DriveWise is an app that gives truck drivers notifications if there is congestion ahead, similar to the app Waze, and I used Clear Guide, which keeps records of traffic speed. 
+                To make the heat map, I converted Drivewise data from latitude and longitude data to mile markers using GIS buffers around mile marker data. 
+                I made a unique string using the mile marker followed by the date and time for both the Clear Guide data and the Drivewise data as a way of joining the data.
+                I created a graph of Clear Guide data with mile markers as the y-axis and time on the x-axis colored by average speed data, with Drivewise event data layered on top.
+              </p>
+              <ul class="work__list">
+                <li>Microsoft Power BI</li>
+                <li>Python</li>
+                <li>QGIS</li>
+                <li>Plotly</li>
+              </ul>
+
               <div class="work__links">
-                <a href="https://storymaps.arcgis.com/stories/2e06932289df4380a4417d19e2c5d1b9" class="btn">View Story Map
+                <a href="https://github.com/AllGracen/Traffic_event_heatmap/tree/main">
+                  <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
                 </a>
               </div>
             </div>
-            
-            <iframe src="https://storymaps.arcgis.com/stories/2e06932289df4380a4417d19e2c5d1b9" width="100%" height="500px" frameborder="0" allowfullscreen allow="geolocation"></iframe>
+            <div class="work__image-box">
+              <img src="./images/newplot.png" class="work__image" alt="NCDOT_heatmap" />
+            </div>
           </div>
 
+
+          <div class="project__box">
+            <div class="work__text">
+              <h3>An Application of Clustering: Addressing Food Insecurity in Western North Carolina</h3>
+              <p>
+                
+                This was a group research project with Neylan Visnius, Mason Hollar and Advisers Holly Rosson and David Abernathy, researched areas of food insecurity in Western North Carolina, in the counties of Buncombe, McDowell and Henderson. 
+                Clustering is a data analysis technique that divides a dataset into distinct groups, with each group containing similar data points. 
+                We apply clustering to CDC social vulnerability and health conditions data to identify and map geographic regions in Western North Carolina that are most suitable for targeted outreach efforts by a local food bank.
+                We ran the clustering algorithm on health and social vulnerability variables.
+                After creating the clusters we used statistical analyses to determine what was going on in the clusters with RStudio. 
+                We also used QGIS and the census geographic boundary to map the clusters.
+              </p>
+              
+                <div class="work__links">
+                <a href="https://github.com/AllGracen/RAAD">
+                    <img src="./images/github.svg" class="work__code" title="View Source Code" alt="GitHub">
+                </a>
+                </div>
+
+                <ul class="work__list">
+                    <li>QGIS</li>
+                    <li>R Studio</li>
+                    <li>Canva</li>
+                </ul>
+            </div>
+              <div class="row">
+                <div class="column" style="background-color:rgba(7, 17, 9, 0.689);">
+                  <h1>Social Vulnerability Variables Used:</h1>
+                  <ul class="tools-list">
+                    <li>Below Poverty</li>
+                    <li>Housing Units</li>
+                    <li>Unemployed</li>
+                    <li>No High School</li>
+                    <li>Single Parent</li>
+                    <li>Minority</li>
+                    <li>Disabled</li>
+                    <li>No Vehicle</li>
+                  </ul>
+                </div>
+                <div class="column" style="background-color: rgba(7, 17, 9, 0.689);">
+                  <h1>Health variables used:</h1>
+                  <ul class="tools-list">
+                    <li>Stroke</li>
+                    <li>Kidney Disease</li>
+                    <li>Obesity</li>
+                    <li>High Cholesterol</li>
+                    <li>Diabetes</li>
+                    <li>COPD</li>
+                    <li>Asthma</li>
+                    <li>High Blood Pressure</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="work__box">
+            <div class="row">
+            <div class="client__logos">
+                <img src="./images/health sdoh cor plot (1).png" class="client__logo" alt="RAAD_cor" />
+                <img src="./images/00000b.png" class="client__logo" alt="RAAD_elbow" />
+                <img src="./images/Clusters_RAAD.png" class="client__logo" alt="RAAD_GIS" />
+                <img src="./images/health cluster summary.png" class="client__logo" alt="RAAD_Clusters" />
+            </div>
+            </div>
+          </div>
+          </div>
           
         </div>
       </div>
