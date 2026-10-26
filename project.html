@@ -23,21 +23,22 @@
   <!-- ***** Header ***** -->
 
     <div class="row">
-      <nav class="nav" role="navigation">
-        <ul class="nav__items">
-          <li class="nav__item">
-            <a href="index.html" class="nav__link">Home</a></li>
-          <li class="nav__item">
-            <a href="#work" class="nav__link">Projects</a></li>
-          <li class="nav__item">
-            <a href="project.html" class="nav__link">Environmental Modeling Project</a></li>
-          <li class="nav__item">
-            <a href="#about" class="nav__link">About</a>
-          </li>
-          <li class="nav__item">
-            <a href="#contact" class="nav__link">Contact</a>
-          </li>
-        </ul>
+      <header class="site-header">
+      <nav class="navbar">
+        <a href="index.html" class="nav-link">Home</a>
+
+        <div class="dropdown">
+          <a href="project.html" class="nav-link">Projects ▾</a>
+
+            <div class="dropdown-menu">
+                <a href="project.html">Environmental Modeling Project</a>
+                <a href="undergrad.html">Undergraduate</a>
+                <a href="hazard.html">GEOG 5230 Hazard Mitigation Class</a>
+            </div>
+        </div>
+
+        <a href="index.html#about" class="nav-link">About</a>
+        <a href="index.html#contact" class="nav-link">Contact</a>
       </nav>
     </div>
 
